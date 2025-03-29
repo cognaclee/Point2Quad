@@ -79,7 +79,7 @@ This example demonstrates an
 	```bash
 	# If you want to use a pretrained OT, run the following command
 	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
-	python "test_models.py"
+	python test_models.py
 	```
 
 ## Acknowledgment
