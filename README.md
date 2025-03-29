@@ -1,11 +1,10 @@
 
 ![Intro figure](https://github.com/HuguesTHOMAS/KPConv/blob/master/doc/Github_intro.png)
 
-Created by Hugues THOMAS
 
 ## Introduction
 
-### Update 27/04/2020: New [PyTorch implementation](https://github.com/HuguesTHOMAS/KPConv-PyTorch) available. With SemanticKitti, and Windows supported.
+### Update 29/03/2025: New [PyTorch implementation]([https://github.com/cognaclee/Point2Quad](https://github.com/cognaclee/Point2Quad) available. 
 
 This repository contains the implementation of **Kernel Point Convolution** (KPConv), a point convolution operator 
 presented in our ICCV2019 paper ([arXiv](https://arxiv.org/abs/1904.08889)). If you find our work useful in your 
