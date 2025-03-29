@@ -31,7 +31,7 @@ We provide scripts for many experiments. The instructions to run these experimen
 
 
 ## Performances
-
+![qualitative.png](assets/qualitative.png)
 
 ## Acknowledgment
 
