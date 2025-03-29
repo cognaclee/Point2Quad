@@ -73,14 +73,13 @@ We provide scripts for many experiments. The instructions to run these experimen
 This example demonstrates an 
 1. **Train**
 	```bash
-	# The first time you run Nopain, use the following command to extract features
-	python test_ae_mn40_cd.py --extract_feature
+	python train.py
 	```
 2. **Test**
 	```bash
 	# If you want to use a pretrained OT, run the following command
 	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
-	python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name results/<yourdirectory>/ot/<your_ot.pt>
+	python "test_models.py"
 	```
 
 ## Acknowledgment
