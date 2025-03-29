@@ -1,3 +1,5 @@
+# Point2Quad
+**Point2Quad: Generating Quad Meshes from Point Clouds via Face Prediction**
 
 ## Introduction
 ![Full pipeline of our Point2Quad](assets/pipeline.png)
@@ -5,16 +7,16 @@ In this repository, we release the code for Point2Quad, a learning-based method 
 
 ### Update 29/03/2025: New [PyTorch implementation](https://github.com/cognaclee/Point2Quad) available. 
 
-This repository contains the implementation of *Point2Quad: Generating Quad Meshes from Point Clouds via Face Prediction**, a quad mesh generator
-presented in our tcsvt paper ([arXiv](https://arxiv.org/abs/1904.08889)). If you find our work useful in your 
-research, please consider citing:
+
+## Citation
+If you find our work useful in your research, please consider citing:
 
 ```
-@article{thomas2019KPConv,
-    Author = {Thomas, Hugues and Qi, Charles R. and Deschaud, Jean-Emmanuel and Marcotegui, Beatriz and Goulette, Fran{\c{c}}ois and Guibas, Leonidas J.},
-    Title = {KPConv: Flexible and Deformable Convolution for Point Clouds},
-    Journal = {Proceedings of the IEEE International Conference on Computer Vision},
-    Year = {2019}
+@inproceedings{li2025nopain,
+  title={NoPain: No-box Point Cloud Attack via Optimal Transport Singular Boundary},
+  author={Li, Zezeng and Du, Xiaoyu and Lei, Na and Chen, Liming and Wang, Weimin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2025}
 }
 ```
 
