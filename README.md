@@ -1,5 +1,5 @@
 
-![Intro figure](https://github.com/cognaclee/Point2Quad/assets/pipeline.png)
+![Full pipeline of our Point2Quad](https://github.com/cognaclee/Point2Quad/assets/pipeline.png)
 
 
 ## Introduction
