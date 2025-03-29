@@ -1,8 +1,7 @@
 
-![Full pipeline of our Point2Quad](assets/pipeline.png)
-
-
 ## Introduction
+![Full pipeline of our Point2Quad](assets/pipeline.png)
+In this repository, we release the code for Point2Quad, a learning-based method for quad-only mesh generation from point clouds. The key idea is learning to identify quad mesh with fused pointwise and facewise features. Specifically, Point2Quad begins with a k-NN-based candidate generation considering the coplanarity and squareness. Then, two encoders are followed to extract geometric and topological features that address the challenge of quad-related constraints, especially by combining in-depth quadrilaterals-specific characteristics. Subsequently, the extracted features are fused to train the classifier with a designed compound loss. The final results are derived after the refinement by a quad-specific post-processing. Extensive experiments on both clear and noise data demonstrate the effectiveness and superiority of Point2Quad, compared to baseline methods under comprehensive metrics. 
 
 ### Update 29/03/2025: New [PyTorch implementation](https://github.com/cognaclee/Point2Quad) available. 
 
