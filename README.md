@@ -26,13 +26,62 @@ A step-by-step installation guide for Ubuntu 16.04 is provided in [INSTALL.md](.
 not supported as the code uses tensorflow custom operations.
 
 
-## Experiments
+## Performances
 
 We provide scripts for many experiments. The instructions to run these experiments are in the [doc](./doc) folder.
 
-
-## Performances
 ![qualitative.png](assets/qualitative.png)
+
+
+## Usage
+
+### Setup Environment
+
+
+1. **Clone the repository and navigate to the project directory:**
+
+   ```bash
+   git clone https://github.com/cognaclee/Point2Quad.git
+   cd Point2Quad
+   ```
+2. **Create and activate the environment using the provided YAML file:**
+	```
+	# Create the environment based on Point2Quad.yaml
+	conda env create --file Point2Quad.yaml --name Point2Quad
+	# Activate the environment
+	conda activate Point2Quad
+
+	```
+
+### Prepare Data and Models
+
+1. **Download the datasets and place them in the `data/` directory:**
+
+	```
+	data/
+	├── shapenetcore_partanno_segmentation_benchmark/
+	├── ScanObjectNN/
+	└── modelnet40_normal_resampled/
+	```
+2. **Download the [pretrained models](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:**
+	```
+	# Create the pretrained directory if it doesn't exist
+	mkdir -p pretrained
+	```
+
+### Run Point2Quad
+This example demonstrates an 
+1. **Train**
+	```bash
+	# The first time you run Nopain, use the following command to extract features
+	python test_ae_mn40_cd.py --extract_feature
+	```
+2. **Test**
+	```bash
+	# If you want to use a pretrained OT, run the following command
+	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
+	python "./test_ae_mn40_cd.py" --source_dir results/<your directory>/ --h_name results/<yourdirectory>/ot/<your_ot.pt>
+	```
 
 ## Acknowledgment
 
