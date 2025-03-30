@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time        : 23/04/2022 17:10 PM
+# @Time        : 23/04/2024 17:10 PM
 # @Description :The code is modified from kpconv
 # @Author      : li zezeng
 # @Email       : zezeng.lee@gmail.com
@@ -252,17 +252,6 @@ class ModelTrainer:
             # Saving
             if config.saving:
                 # Get current best state dict
-                '''
-                if acc>=best_acc:
-                    save_dict = {'epoch': self.epoch,
-                             'model_state_dict': net.state_dict(),
-                             'optimizer_state_dict': self.optimizer.state_dict(),
-                             'saving_path': config.saving_path}
-
-                    # Save current best state of the network (for restoring purposes)
-                    checkpoint_path = join(checkpoint_directory, 'best_chkp.tar')
-                    torch.save(save_dict, checkpoint_path)
-                '''
                 save_dict = {'epoch': self.epoch,
                              'model_state_dict': net.state_dict(),
                              'optimizer_state_dict': self.optimizer.state_dict(),
