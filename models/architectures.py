@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time        : 22/04/2022 17:10 PM
+# @Time        : 22/04/2024 17:10 PM
 # @Description :The code is modified from kpconv
 # @Author      : li zezeng
 # @Email       : zezeng.lee@gmail.com
@@ -191,7 +191,7 @@ class QuadNet(nn.Module):
         self.head_mlp = UnaryBlock(out_dim, self.fea_dim, False, 0) 
         #self.head_softmax = UnaryBlock(self.fea_dim, self.C, False, 0, no_relu=True)
         
-        '''
+        
         sequence = [nn.Conv1d(config.in_face_features_dim, 128, 1),nn.InstanceNorm1d(128, affine=True),nn.LeakyReLU()]
         #sequence += [PointAttention(64)]
         sequence += [nn.Conv1d(128, 128, 1),nn.InstanceNorm1d(128, affine=True),nn.LeakyReLU()]
@@ -202,7 +202,7 @@ class QuadNet(nn.Module):
         
         self.face_encoder = nn.Sequential(*sequence)
         #initialize_weights(self.face_encoder)
-        '''
+        
 
         
         self.part_num = 2
@@ -242,7 +242,7 @@ class QuadNet(nn.Module):
         M, _ = faces.size()
         
         #print('x.shape=',x.shape)
-        '''
+        
         f0 = faces.unsqueeze(1).repeat(1, x.shape[1], 1)
         x_f = x.unsqueeze(-1).repeat(1, 1, 4).gather(0, f0).permute(0, 2, 1).contiguous().view(1,x.shape[1] * 4, M)
         f_info = batch.f_infos.clone().detach().permute(1, 0).unsqueeze(0).contiguous()
@@ -250,7 +250,7 @@ class QuadNet(nn.Module):
         #print('f_info.shape=',f_info.shape)
         x_f  = torch.cat((x_f,f_info), dim=1)
         x_face1 = self.face_encoder(x_f)
-        '''
+        
         # Loop over consecutive blocks
         skip_x = []
         for block_i, block_op in enumerate(self.encoder_blocks):
@@ -274,12 +274,12 @@ class QuadNet(nn.Module):
         
         x1 = self.head_mlp(x, batch).view(N, self.fea_dim).transpose(1, 0).unsqueeze(-1).repeat(1, 1, 4)
         faces = faces.unsqueeze(0).repeat(self.fea_dim, 1, 1)
-        
+        '''
         x_face = x1.gather(1, faces).permute(0, 2, 1).contiguous().view(1,self.fea_dim * 4, M)
         '''
         x_face2 = x1.gather(1, faces).permute(0, 2, 1).contiguous().view(1,self.fea_dim * 4, M)
         x_face  = torch.cat((x_face1,x_face2), dim=1)
-        '''
+        
         
         x2 = self.tail(x_face).transpose(2, 1).contiguous().view(-1, self.part_num)
         
