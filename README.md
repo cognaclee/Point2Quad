@@ -41,7 +41,7 @@ We provide scripts for many experiments. The instructions to run these experimen
    ```
 2. **Installation**
 
-A step-by-step installation guide for Ubuntu is provided in [INSTALL.md](./INSTALL.md). Windows is currently 
+   A step-by-step installation guide for Ubuntu is provided in [INSTALL.md](./INSTALL.md). Windows is currently 
 not supported as the code uses tensorflow custom operations.
 
 
