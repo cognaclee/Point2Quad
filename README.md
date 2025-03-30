@@ -20,11 +20,6 @@ If you find our work useful in your research, please consider citing:
 }
 ```
 
-## Installation
-
-A step-by-step installation guide for Ubuntu 16.04 is provided in [INSTALL.md](./INSTALL.md). Windows is currently 
-not supported as the code uses tensorflow custom operations.
-
 
 ## Performances
 
@@ -44,14 +39,11 @@ We provide scripts for many experiments. The instructions to run these experimen
    git clone https://github.com/cognaclee/Point2Quad.git
    cd Point2Quad
    ```
-2. **Create and activate the environment using the provided YAML file:**
-	```
-	# Create the environment based on Point2Quad.yaml
-	conda env create --file Point2Quad.yaml --name Point2Quad
-	# Activate the environment
-	conda activate Point2Quad
+2. **Installation**
 
-	```
+A step-by-step installation guide for Ubuntu is provided in [INSTALL.md](./INSTALL.md). Windows is currently 
+not supported as the code uses tensorflow custom operations.
+
 
 ### Prepare Data and Models
 
