@@ -65,18 +65,21 @@ not supported as the code uses tensorflow custom operations.
 1. **Train**
    
    Set ```point2QuadrilateralConfig.data_dir``` in ```train.py``` as **your data path**, then
+   
 	```bash
 	python train.py
 	```
 3. **Test**
    
    Set ```config.data_dir``` in ```test.py``` as **your data path**, ```chosen_log``` as the **pretained model path**, then
+   
 	```bash
 	python test.py
 	```
  3. **Metrics Evaluation**
    
    Set ```input_dir``` in [cal_metrics.py](./utils/cal_metrics.py) as **the generated quad mesh path**, then
+   
 	```bash
         ## Note that the quad mesh data needs to be in .obj format.
 	python test.py
