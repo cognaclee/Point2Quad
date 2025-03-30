@@ -72,7 +72,8 @@ We provide scripts for many experiments. The instructions to run these experimen
 ### Run Point2Quad
 This example demonstrates an 
 1. **Train**
-    Set ```point2QuadrilateralConfig.data_dir``` as **your data path**, then
+
+   Set ```point2QuadrilateralConfig.data_dir``` as **your data path**, then
 	```bash
 	python train.py
 	```
