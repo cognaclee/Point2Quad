@@ -56,9 +56,7 @@ if __name__ == '__main__':
     config = Config()
     config.load(chosen_log)
     config.phase = 'test'
-    #config.testing_data_name = '/root/data/data/mesh/quadrilateral/train/point1024candidate12.h5'
-    #config.data_dir = '/user38/data/mesh/quadrilateral/third/test_no_dupl/'
-    config.data_dir = '/user38/data/mesh/quadrilateral/20240630/'
+    config.data_dir = '/your/data/path/'
 
     ##################################
     # Change model parameters for test
@@ -111,7 +109,7 @@ if __name__ == '__main__':
     print('\nStart test')
     print('**********\n')
     
-    out_dir = './test_results/big_face_infos_29_w4/'
+    out_dir = './test_results/'
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
     baseNames = [] 
