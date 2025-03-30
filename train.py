@@ -21,7 +21,7 @@ class point2QuadrilateralConfig(Config):
     # Dataset name
     dataset = 'point2Quadrilateral'
     phase = 'train'
-    data_dir = '/user38/data/mesh/quadrilateral/20240630/'
+    data_dir = '/your/data/path/'
     
     # Number of CPU threads for the input pipeline
     input_threads = 12
@@ -179,7 +179,6 @@ if __name__ == '__main__':
     ###############
 
     # Choose here if you want to start training from a previous snapshot (None for new training)
-    #previous_training_path = 'Log_2020-03-19_19-53-27'
     previous_training_path = ''
 
     # Choose index of checkpoint to start from. If None, uses the latest chkp
@@ -216,8 +215,6 @@ if __name__ == '__main__':
         config.saving_path = sys.argv[1]
                        
     # Initialize datasets   
-    #training_dataset = point2QuadDataset(config, set='training', use_potentials=True)
-    #test_dataset = point2QuadDataset(config, set='validation', use_potentials=True)
     training_dataset = object2QuadDataset(config, set='training')
     
     # Initialize the dataloader
@@ -252,7 +249,6 @@ if __name__ == '__main__':
         os.makedirs(out_dir)
     
     config.phase = 'test'
-    #config.data_dir = '/user36/data/mesh/quadrilateral/third/test_no_dupl/'
     test_dataset = object2QuadDataset(config, set='test')
     test_loader = DataLoader(test_dataset,
                              batch_size=1,
