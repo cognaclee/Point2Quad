@@ -72,16 +72,15 @@ We provide scripts for many experiments. The instructions to run these experimen
 ### Run Point2Quad
 This example demonstrates an 
 1. **Train**
-
    Set ```point2QuadrilateralConfig.data_dir``` in ```train.py``` as **your data path**, then
 	```bash
 	python train.py
 	```
 3. **Test**
+   
+   Set ```config.data_dir``` in ```test.py``` as **your data path**, ```chosen_log``` as the **pretained model path**, then
 	```bash
-	# If you want to use a pretrained OT, run the following command
-	# Replace `<your directory>` and `<your_ot.pt>` with your specific paths
-	python test_models.py
+	python test.py
 	```
 
 ## Acknowledgment
