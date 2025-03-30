@@ -81,7 +81,7 @@ not supported as the code uses tensorflow custom operations.
     Set ```input_dir``` in [cal_metrics.py](./utils/cal_metrics.py) as **the generated quad mesh path**, then
    
 	```bash
-	## Note that the quad mesh data needs to be in .obj format.
+	## Note that the quad mesh data needs to be in .obj format
 	python test.py
 	```
 
