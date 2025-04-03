@@ -12,12 +12,16 @@ In this repository, we release the code for Point2Quad, a learning-based method 
 If you find our work useful in your research, please consider citing:
 
 ```
-@inproceedings{li2025nopain,
-  title={NoPain: No-box Point Cloud Attack via Optimal Transport Singular Boundary},
-  author={Li, Zezeng and Du, Xiaoyu and Lei, Na and Chen, Liming and Wang, Weimin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2025}
-}
+@ARTICLE{10945920,
+  author={Li, Zezeng and Qi, Zhihui and Wang, Weimin and Wang, Ziliang and Duan, Junyi and Lei, Na},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Point2Quad: Generating Quad Meshes from Point Clouds via Face Prediction}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Point cloud compression;Faces;Mesh generation;Feature extraction;Surface reconstruction;Surface fitting;Noise;Image reconstruction;Noise measurement;Accuracy;Mesh Generation;Quadrilateral;Point Clouds;Deep Learning},
+  doi={10.1109/TCSVT.2025.3556130}}
 ```
 
 
