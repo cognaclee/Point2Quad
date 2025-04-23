@@ -86,7 +86,7 @@ not supported as the code uses tensorflow custom operations.
 
 Our code uses <a href="https://github.com/HuguesTHOMAS/KPConv">KPConv</a> as the backbone.
 
-Our dataset includes contributions from <a href="https://www.quadmesh.cloud/300/">quadmesh.cloud</a>, which provides valuable real-world data for our experiments.
+Our dataset includes contributions from <a href="https://www.quadmesh.cloud/300/">quadmesh.cloud</a>, which provides high-quality quad meshes for our experiments.
 
 ## License
 Our code is released under MIT License (see LICENSE file for details).
