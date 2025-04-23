@@ -5,8 +5,6 @@
 ![Full pipeline of our Point2Quad](assets/pipeline.png)
 In this repository, we release the code for Point2Quad, a learning-based method for quad-only mesh generation from point clouds. The key idea is learning to identify quad mesh with fused pointwise and facewise features. Specifically, Point2Quad begins with a k-NN-based candidate generation considering the coplanarity and squareness. Then, two encoders are followed to extract geometric and topological features that address the challenge of quad-related constraints, especially by combining in-depth quadrilaterals-specific characteristics. Subsequently, the extracted features are fused to train the classifier with a designed compound loss. The final results are derived after the refinement by a quad-specific post-processing. Extensive experiments on both clear and noise data demonstrate the effectiveness and superiority of Point2Quad, compared to baseline methods under comprehensive metrics. 
 
-### Update 29/03/2025: New [PyTorch implementation](https://github.com/cognaclee/Point2Quad) available. 
-
 
 ## Citation
 If you find our work useful in your research, please consider citing:
@@ -49,7 +47,7 @@ We provide scripts for many experiments. The instructions to run these experimen
 not supported as the code uses tensorflow custom operations.
 
 
-### Prepare Data and Models
+### Prepare Data
 
 1. **Download the datasets and place them in the `data/` directory:**
 
@@ -58,11 +56,6 @@ not supported as the code uses tensorflow custom operations.
 	├── shapenetcore_partanno_segmentation_benchmark/
 	├── ScanObjectNN/
 	└── modelnet40_normal_resampled/
-	```
-2. **Download the [pretrained models](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `pretrained/` directory:**
-	```
-	# Create the pretrained directory if it doesn't exist
-	mkdir -p pretrained
 	```
 
 ### Run Point2Quad
@@ -92,6 +85,8 @@ not supported as the code uses tensorflow custom operations.
 ## Acknowledgment
 
 Our code uses <a href="https://github.com/HuguesTHOMAS/KPConv">KPConv</a> as the backbone.
+
+Our dataset includes contributions from <a href="https://www.quadmesh.cloud/300/">quadmesh.cloud</a>, which provides valuable real-world data for our experiments.
 
 ## License
 Our code is released under MIT License (see LICENSE file for details).
