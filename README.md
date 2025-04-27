@@ -25,8 +25,6 @@ If you find our work useful in your research, please consider citing:
 
 ## Performances
 
-We provide scripts for many experiments. The instructions to run these experiments are in the [doc](./doc) folder.
-
 ![qualitative.png](assets/qualitative.png)
 
 
