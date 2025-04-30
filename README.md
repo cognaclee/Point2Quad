@@ -47,7 +47,7 @@ not supported as the code uses tensorflow custom operations.
 
 ### Prepare Data
 
-1. **Download the datasets and place them in the `data/` directory:**
+1. **Download the [datasets](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `data/` directory:**
 
 	```
 	data/
@@ -57,7 +57,7 @@ not supported as the code uses tensorflow custom operations.
 	```
 2. **Do
 
-3. (Optional) You can use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file. However, if you're using the data we provide, you can skip this step.
+3. Use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file for training.
 ### Run Point2Quad
 1. **Train**
    
