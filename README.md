@@ -55,7 +55,9 @@ not supported as the code uses tensorflow custom operations.
 	├── ScanObjectNN/
 	└── modelnet40_normal_resampled/
 	```
+2. **Do
 
+3. (Optional) You can use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file. However, if you're using the data we provide, you can skip this step.
 ### Run Point2Quad
 1. **Train**
    
