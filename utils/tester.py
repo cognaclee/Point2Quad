@@ -92,9 +92,8 @@ class ModelTester:
                 faces = batch.faces.cpu().numpy()
                 input_points =   batch.points[0].cpu().detach().numpy()
                 #sub_ply_file = join(save_dir, '{:04d}.npz'.format(i))
-                sub_ply_file = join(save_dir, baseName[i]+'npz')
-                np.savez(sub_ply_file, predicted=predicted, labels=labels,cand_faces=faces,input_points=input_points,probability=probs)
-            
+                sub_m_file = join(save_dir, baseName[i]+'m')
+                write_m_with_cand_faces(input_points, faces, predicted, probs, sub_m_file)
 
             # Average timing
             t += [time.time()]
@@ -109,7 +108,24 @@ class ModelTester:
                                      1000 * (mean_dt[1])))
 
         # Print instance mean
-        #print('{:s} mean accuracy = {:.1f}%'.format(config.dataset, 100*mean_acc/len(test_loader)))
         print('{:s} mean precision = {:.5f}%, mean recall = {:.5f}%, mean accuracy = {:.5f}%'.format(config.dataset, 100*mean_pre/obj_nums, 100*mean_rec/obj_nums, 100*mean_acc/obj_nums))
 
 
+
+def write_m_with_cand_faces(points, cand_faces, prediction, probs, filename):
+    out_faces = []
+    for i, data in enumerate(prediction):   
+        if data == 1:
+            out_faces.append(cand_faces[i,:])
+    faces = np.array(out_faces)+1
+    p_nums = points.shape[0]
+    f_nums = faces.shape[0]
+
+    with open(filename,"w") as f:
+        for i, data in enumerate(points):
+            oneline = 'Vertex '+str(i+1)+' '+str(data[0])+' '+str(data[1])+' '+str(data[2])+'\n'
+            f.writelines(oneline)
+        for i, data in enumerate(faces):
+            oneline = 'Face '+str(i+1)+' '+str(data[0])+' '+str(data[1])+' '+str(data[2])+' '+str(data[3])+\
+                      ' {p='+str(probs[i])+'}\n'
+            f.writelines(oneline)
