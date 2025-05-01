@@ -55,7 +55,7 @@ not supported as the code uses tensorflow custom operations.
 	├── ScanObjectNN/
 	└── modelnet40_normal_resampled/
 	```
-2. **Follow the [README.md](./datasets/DataProcess/README.md) in [DataProcess](./datasets/DataProcess) to process the data
+2. **Follow the [README.md](./datasets/DataProcess/README.md) in [DataProcess](./datasets/DataProcess) to process the data**
 
 3. Use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file for training.
 ### Run Point2Quad
