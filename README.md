@@ -45,7 +45,7 @@ If you find our work useful in your research, please consider citing:
 not supported as the code uses tensorflow custom operations.
 
 
-### Prepare Data
+### Data Process
 
 1. **Download the [datasets](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the `data/` directory:**
 
@@ -55,7 +55,7 @@ not supported as the code uses tensorflow custom operations.
 	├── ScanObjectNN/
 	└── modelnet40_normal_resampled/
 	```
-2. **Do
+2. **Follow the (./datasets/DataProcess/README.md) in (./datasets/DataProcess) to process the data
 
 3. Use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file for training.
 ### Run Point2Quad
