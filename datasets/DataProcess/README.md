@@ -4,6 +4,8 @@
 
 ## Usage
 
+**PreProcess:**
+
 1. Place the `.obj` files into the `data\0_obj\` directory, then run:
   
   ```bash
@@ -19,9 +21,11 @@
   ```
   
   The preprocessed data will be stored in `data\2_pre\`.
+
+**PostProcess:**
   
 3. Run `Point2Quad` and save the generated `.m` files into the `data\3_pred\` directory.
-  
+
 4. Execute the following batch scripts in order as postprocess:
   
   ```bash
