@@ -47,9 +47,9 @@ not supported as the code uses tensorflow custom operations.
 
 ### Data Process
 
-1. **Download the obj [datasets](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the [0_obj](./datasets/DataProcess/data/0_obj) directory:**
+1. Download the obj [datasets](https://drive.google.com/drive/folders/1K0i1Q-77maDBT03fSGRQzHXA1bvgNSD5?usp=drive_link) and place them in the [0_obj](./datasets/DataProcess/data/0_obj) directory
 
-2. **Follow the [README.md](./datasets/DataProcess/README.md) in [DataProcess](./datasets/DataProcess) to process the data**
+2. Follow the [README.md](./datasets/DataProcess/README.md) in [DataProcess](./datasets/DataProcess) to process the data
 
 3. Use the script [m2h5.py](./datasets/m2h5.py) to convert the original .m file into an .h5 file for training.
 ### Run Point2Quad
