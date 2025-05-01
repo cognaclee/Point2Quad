@@ -22,7 +22,7 @@
   
 3. Run `Point2Quad` and save the generated `.m` files into the `data\3_pred\` directory.
   
-4. Execute the following batch scripts in order:
+4. Execute the following batch scripts in order as postprocess:
   
   ```bash
   bat\2_post1.bat
