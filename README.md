@@ -47,7 +47,7 @@ not supported as the code uses tensorflow custom operations.
 
 ### Data Process
 
-1. Download the obj [datasets](https://drive.google.com) and place them in the [0_obj](./datasets/DataProcess/data/0_obj) directory
+1. Download the obj [datasets](https://drive.google.com/file/d/1a0A0F_eLCYHhoOWPCYdfwl51p9trnjNN/view?usp=drive_link) and place them in the [0_obj](./datasets/DataProcess/data/0_obj) directory
 
 2. Follow the [README.md](./datasets/DataProcess/README.md) in [DataProcess](./datasets/DataProcess) to process the data
 
