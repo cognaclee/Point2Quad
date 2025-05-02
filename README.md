@@ -69,7 +69,7 @@ not supported as the code uses tensorflow custom operations.
 	```
  3. **Metrics Evaluation**
    
-    Set ```input_dir``` in [cal_metrics.py](./utils/cal_metrics.py) as **the generated quad mesh path**, then
+    Set ```input_dir``` in [cal_metrics.py](./metrics/cal_metrics.py) as **the generated quad mesh path**, then
    
 	```bash
 	## Note that the quad mesh data needs to be in .obj format
