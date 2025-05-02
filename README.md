@@ -73,7 +73,7 @@ not supported as the code uses tensorflow custom operations.
    
 	```bash
 	## Note that the quad mesh data needs to be in .obj format
-	python test.py
+	python cal_metrics.py
 	```
 
 ## Acknowledgment
