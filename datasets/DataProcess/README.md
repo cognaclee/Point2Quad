@@ -1,6 +1,6 @@
 ## Introduction
 
-**Data Processing: Preprocessing and Postprocessing**(Works on Windows)
+**Data Processing: Preprocessing and Postprocessing** (Works on Windows)
 
 ## Usage
 
