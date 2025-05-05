@@ -20,11 +20,6 @@
      - mayavi (for visualization)
      - PyQt5 (for visualization)
      
-* Compile the customized Tensorflow operators located in `tf_custom_ops`. Open a terminal in this folder, and run:
-
-          sh compile_op.sh
-
-     N.B. If you installed Tensorflow in a virtual environment, it needs to be activated when running these scripts
      
 * Compile the C++ extension module for python located in `cpp_wrappers`. Open a terminal in this folder, and run:
 
