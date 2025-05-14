@@ -1,5 +1,6 @@
 # Point2Quad
 **Point2Quad: Generating Quad Meshes from Point Clouds via Face Prediction**
+
 [![](https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green)](https://arxiv.org/pdf/2504.19545)
 [![](https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10945920)
 ## Introduction
